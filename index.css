@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    width: 1200px;
+    height: 800px;
+    background-color: gainsboro;
+    margin: auto;
+    
+
+}
+.img-div img{
+    display: block;
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-top: 220px;
+    margin-left: 20px;
+}
+.form-view {
+    width: 50%;
+    float: right;
+    background-color: slategrey;
+    color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+#title {
+    text-align: center;
+}
+#description{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+label, span {
+    font-size: medium;
+    font-weight: 600;
+
+}
+input, #dropdown, textarea {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid rgb(160, 133, 133);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    font-size: small;
+}
+input:placeholder-shown, textarea:placeholder-shown {
+    padding-left: 15px;
+}
+
+#dropdown {
+    color: gray;
+ }
+
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 7px 20px;
+}
+/*formatting checkboxes*/
+.checklist1 {
+    width: 45%;
+    margin-left: 50px;
+}
+
+.checklist2 {
+    width: 45%;
+    position: absolute;
+    top: 400px;
+    left: 950px;
+    margin-right: 20px;
+}
+/*formatting radio buttons*/
+.radio label {
+    margin-right: 30px;
+}
+#submit {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+  
+}

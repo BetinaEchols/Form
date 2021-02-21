@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link href="./index.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="contact">
+        <div class="img-div">
+            <img src="./images/_Destination3_MarketingPhotographyGlossy-04-2.jpg" alt="A winding country road."/>
+        </div>
+        <div class="form-view">
+            <div class="contact-message">
+                <h1 id="title">Let me take this journey with you</h1>
+                <p id="description">
+                    Whatever your photo ambitions, I'm ready to make them a reality. <br>
+                    Provide your contact information below and I will be in touch.
+                </p>
+            </div>
+            <form id="survey-form"> 
+                <div class="form-item">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" name="name" required placeholder="Enter your name"/>
+                </div>
+                <div class="form-item">
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" name="email" required placeholder="Enter your email"/>
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" name="phone" placeholder="321-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                </div>
+                <div class="form-item">
+                    <span id="chklabel">What is the occasion?</span>
+                        <div class="checklist1">
+                            <input id="wedding" type="checkbox" name="session" value="wedding"/>
+                            <label for="wedding">Wedding</label><br>
+
+                            <input id="graduation" type="checkbox" name="session" value="graduation"/>
+                            <label for="graduation">Graduation</label><br>
+
+                            <input id="family" type="checkbox" name="session" value="family"/>
+                            <label for="family">Family</label><br>
+
+                            <input id="portrait" type="checkbox" name="session" value="portrait"/>
+                            <label for="portrait">Portrait</label><br>
+                        </div>
+                        <div class="checklist2">
+                            <input id="event" type="checkbox" name="session" value="event"/>
+                            <label for="event">Event</label><br>
+
+                            <input id="business" type="checkbox" name="session" value="business"/>
+                            <label for="business">Business</label><br>
+
+                            <input id="outdoor" type="checkbox" name="session" value="outdoor"/>
+                            <label for="outdoor">Outdoors</label><br>
+
+                            <input id="other" type="checkbox" name="session" value="other"/>
+                            <label for="other">Other</label><br>
+                        </div>
+                                               
+                </div>
+               
+                <div class="form-item">
+                    <label for="number" id="number-label">Number of people in the session?</label>
+                    <input id="number" type="number" name="number" min="1" max="50" placeholder="Enter a number between 1 and 50"/>
+                </div>
+                <div class="form-item">
+                    <span>What is most important to you?</span>
+                    <div class="radio">
+                        <input id="creativity" type="radio" name="value-option" value="creativity"/>
+                        <label for="creativity">Creativity</label>
+
+                        <input id="quality" type="radio" name="value-option" value="quality"/>
+                        <label for="quality">Quality</label>
+
+                        <input id="price" type="radio" name="value-option" value="price"/>
+                        <label for="price">Price</label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="dropdown">How did you find me?</label>
+                    <select name="referral" id="dropdown">
+                        <option disabled selected value="">Select an option</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="pintrest">Pintrest</option>
+                        <option value="yelp">Yelp</option>
+                        <option value="referral">Personal Referral</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="comments">Anything else you'd like to share?</label>
+                    <textarea id="comments" placeholder="Enter your thoughts here..." maxlength="200"></textarea>
+                </div>
+                <div class="form-item submit">
+                    <input id="submit" type="submit"/>
+                </div>
+            </form>
+        </div>
+    </div>  
+</body>
+</html>
